@@ -23,7 +23,7 @@ const College = () => {
                                 <p>Admission Date:{college.admission}</p>
                                 <p>Rating: {college.rating}</p>
                                 <div className="card-actions justify-end">
-                                    <button className="btn btn-primary">Details</button>
+                                    <button className="btn btn-outline border-0 border-b-4 mt-2">Details</button>
                                 </div>
                             </div>
                         </div>

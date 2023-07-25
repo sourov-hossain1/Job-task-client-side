@@ -7,12 +7,15 @@ import College from "../Pages/College/College";
 import Admission from "../Pages/Admission/Admission"
 import Input from "../Pages/Input/Input";
 import MyCollege from "../Pages/MyCollege/MyCollege"
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
+import Not from "../NotFound/Not";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
-        children : [
+        children: [
             {
                 path: '/',
                 element: <Home></Home>
@@ -32,8 +35,20 @@ const router = createBrowserRouter([
             {
                 path: '/mycollege',
                 element: <MyCollege></MyCollege>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            {
+                path: '/register',
+                element: <Register></Register>
             }
         ]
     },
+    {
+        path: '/*',
+        element: <Not></Not>
+    }
 ]);
 export default router;
